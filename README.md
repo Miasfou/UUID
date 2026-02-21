@@ -15,7 +15,7 @@ Designed for maximum throughput, low latency, and thread safety, utilizing the `
 *  **Global Atomic Counter:** Ensures no two generator instances start with the same sequence, even if created at the exact same nanosecond!
 *  **High Resolution Clock:** Adds temporal entropy.
 *  **Thread ID Hash:** Adds spatial entropy based on execution context.
-*  **Security:** **Not Cryptographically Secure! Uses wyrandm do not use this for generating passwords, session tokens, or private keys!**
+*  **Security:** **Not Cryptographically Secure! Uses wyrand, do not use this for generating passwords, session tokens, or private keys!**
 
 # Usage Examples
 ```cpp
