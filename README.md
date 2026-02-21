@@ -1,7 +1,7 @@
 # UUID Header Only C++
 
 A very high performance, header only C++ library for generating **RFC 4122 compliant V4 UUIDs**.
-Designed for maximum throughput, low latency, and thread safety, utilizing the `wyrand` PRNG algorithm and SIMD friendly batch processing.\
+Designed for maximum throughput, low latency, and thread safety, utilizing the `wyrand` PRNG algorithm and SIMD friendly batch processing.
 
 *   **Performance:** Generates and formats UUIDs significantly faster than `boost::uuid` or `libuuid`.
 *   **Header Only:** No building, no linking. Just `#include "UUID.h"`.
