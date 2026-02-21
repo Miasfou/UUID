@@ -8,12 +8,10 @@ Designed for maximum throughput, low latency, and thread safety, utilizing the `
 *   **RFC 4122 Compliant:** Correctly sets the Version 4 and Variant (RFC) bits.
 *   **Thread Safety:** Uses `thread_local` generators with collision resistant seeding logic.
 *   **Multi Threading:** Automatic multi threading for large buffer fills (>20k).
-*   **Cache Optimized:** Lookup tables are aligned to CPU cache lines (64 byte) to minimize cache misses.\
-
+*   **Cache Optimized:** Lookup tables are aligned to CPU cache lines (64 byte) to minimize cache misses.
 *   **RNG Step:** ~3-5 CPU cycles (thanks to purely arithmetic operations).
 *   **Formatting:** The conversion from 128-bit integer to a 36-byte string is heavily unrolled.
-*   **Total Throughput:** On modern hardware (e.g., Ryzen 5000/Intel 12th gen+), this implementation can theoretically saturate memory bandwidth when running in bulk mode.\
-
+*   **Total Throughput:** On modern hardware (e.g., Ryzen 5000/Intel 12th gen+), this implementation can theoretically saturate memory bandwidth when running in bulk mode.
 *  **Global Atomic Counter:** Ensures no two generator instances start with the same sequence, even if created at the exact same nanosecond!
 *  **High Resolution Clock:** Adds temporal entropy.
 *  **Thread ID Hash:** Adds spatial entropy based on execution context.
